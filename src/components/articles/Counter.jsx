@@ -1,9 +1,14 @@
 "use client"
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const Counter = () => {
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log('count a changé');
+    }, [count]); //useEffect ecoute count
+    //useEffect sera lancé a chaque chengement de [count]
     
     return (
         <div>
