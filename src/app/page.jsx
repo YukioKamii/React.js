@@ -6,6 +6,7 @@ export default function Home(){
     <main>
       <Welcome name="Yoann"/>
       <Counter/>
+      
     </main>
   );
 }
